@@ -16,7 +16,7 @@ header.outerHTML = `<header class="header" id="header">
                    <div class="header_navbar_login">
                        <div class="header_navbar_loginbutton">
                            <p style="margin-bottom: 5px;"> Xin Chào Quý Khách </p>
-                           <a href="">Đăng nhập</a> <small>hoặc</small> <a href="">Đăng ký</a>
+                           <a href="/html/loginform.html">Đăng nhập</a> <small>hoặc</small> <a href="">Đăng ký</a>
                        </div>
                    </div>
                    <div class="header_navbar_heartcart">

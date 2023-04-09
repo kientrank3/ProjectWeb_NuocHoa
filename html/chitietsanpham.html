@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: auto;
+            padding: auto;
+            box-sizing: border-box;
+        }
+
+        .center {
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            margin-top: 30px;
+        }
+
+        .product-info h2 {
+            font-size: 28px;
+        }
+
+        .product-info .rating {
+            font-size: 20px;
+            color: gold;
+        }
+
+        .product-info .status {
+            font-size: 20px;
+            color: green;
+        }
+
+        .product-info .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .product-info .description {
+            margin-top: 20px;
+        }
+
+        .product-info .description p {
+            font-size: 18px;
+        }
+
+        .product-info .detail {
+            margin-top: 20px;
+        }
+
+        .product-info .detail ul li {
+            font-size: 18px;
+            list-style-type: none;
+        }
+
+        .product-info .quantity {
+            margin-top: 20px;
+        }
+
+        .product-info .quantity label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .product-info .quantity input {
+            width: 50px;
+            height: 30px;
+            font-size: 18px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .product-info .btn {
+            margin-top: 20px;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-tabs {
+            border-bottom: none;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .nav-link.active {
+            color: #f00;
+        }
+
+        .tab-pane {
+            padding: 20px;
+        }
+        .row{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="center row">
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <img style="width: 100%;" src="../img/sanpham/img_chanelbleu.webp" alt="Product Image"
+                    class="product-image img-fluid mx-auto d-block">
+            </div>
+            <div>
+                <img class="col-md-4" style="width: 30%;" src="../img/sanpham/img_chanelcoco.jpg" alt="">
+                <img class="col-md-4" style="width: 30%;" src="../img/sanpham/img_chanelcoco.jpg" alt="">
+                <img class="col-md-4" style="width: 30%;" src="../img/sanpham/img_chanelcoco.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <td id="tensp">Perfume 001</td>
+                    </tr>
+                    <tr>
+                        <th>Đánh giá</th>
+                        <td>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </td>
+                    </tr>
+                    <tr id="tinhtrang">
+                        <th>Tình trạng</th>
+                        <td>Còn hàng</td>
+                    </tr>
+                    <tr>
+                        <th>Giá</th>
+                        <td><span id="price">250.000đ</span></td>
+                    </tr>
+                    <tr>
+                        <th>Mô tả</th>
+                        <td>Đây là sản phẩm rất tuyệt vời với hương thơm ngọt ngào và quyến rũ. Sản phẩm rất phù hợp với
+                            các buổi tiệc và sự kiện quan trọng.</td>
+                    </tr>
+                    <tr>
+                        <th>Giới tính</th>
+                        <td>Nữ</td>
+                    </tr>
+                    <tr>
+                        <th>Xuất xứ</th>
+                        <td>Pháp</td>
+                    </tr>
+                    <tr>
+                        <th>Dung tích</th>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="dungtich" id="dungtich1" value="10ml"
+                                    checked>
+                                <label class="form-check-label" for="dungtich1">10ml</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="dungtich" id="dungtich2"
+                                    value="fullbox">
+                                <label class="form-check-label" for="dungtich2">Fullbox</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Số lượng</th>
+                        <td>
+                            <input type="number" class="form-control" id="quantity" value="1" min="1" max="10">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary btn-lg">Mua ngay</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-success btn-lg">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="product-info-tab" data-toggle="tab" href="#product-info" role="tab"
+                        aria-controls="product-info" aria-selected="true">Thông tin sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="usage-tab" data-toggle="tab" href="#usage" role="tab" aria-controls="usage"
+                        aria-selected="false">Hướng dẫn sử dụng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="policy-tab" data-toggle="tab" href="#policy" role="tab"
+                        aria-controls="policy" aria-selected="false">Chính sách đổi trả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab"
+                        aria-controls="review" aria-selected="false">Đánh giá</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="product-info" role="tabpanel"
+                    aria-labelledby="product-info-tab">
+                    <!-- Nội dung tab thông tin sản phẩm -->
+                </div>
+                <div class="tab-pane fade" id="usage" role="tabpanel" aria-labelledby="usage-tab">
+                    <!-- Nội dung tab hướng dẫn sử dụng -->
+                </div>
+                <div class="tab-pane fade" id="policy" role="tabpanel" aria-labelledby="policy-tab">
+                    <!-- Nội dung tab chính sách đổi trả -->
+                </div>
+                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                    <!-- Nội dung tab đánh giá -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>
