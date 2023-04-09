@@ -1,5 +1,5 @@
 .footer{
-    height: 260px;
+    height: 300px;
     background-color: rgb(34,80,62);
     display: flex;
     flex-direction: column;
@@ -8,15 +8,16 @@
 .footer a,
 .footer p{
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
 }
 .footer h5 {
     margin-top: 20px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 .footer_heading{
     width: 100%;
@@ -52,7 +53,7 @@
 }
 
 .footer_bottom_social i{
-    font-size: 35px;
+    font-size: 40px;
 }
 .footer_bottom_social a:hover{
     color:rgb(255, 255, 255,0.7);
@@ -77,7 +78,7 @@
 }
 .footer_bottom_form input{
     border-radius: 5px;
-    width: 190px;
+    width: 210px;
     height: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;

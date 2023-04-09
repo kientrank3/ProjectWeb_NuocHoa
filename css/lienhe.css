@@ -49,20 +49,26 @@
 }
 .main_center input{
     border:  1px solid rgb(201, 199, 199);
-    width: 330px;
+    width: 340px;
     margin-top: 5px;
+    height: 30px;
 }
 .main_center textarea{
     margin-top: 5px;
     border-radius: 0px 0px 5px 0px;
     border: 1px solid rgb(201, 199, 199);
-    width: 678px;
+    width: 760px;
 }
 .thongtin{
+    margin: 0px;
     display: grid;
     grid-template-columns: 50% 50%;
 }
+.item2 {
+    margin-right: 0px;
+}
 label{
+    margin-left: 0px;
     margin-top: 10px;
 }
 .main_center h4{

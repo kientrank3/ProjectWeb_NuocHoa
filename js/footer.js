@@ -5,7 +5,7 @@ footer.outerHTML = `<footer class="footer">
         <h5>VỀ CHÚNG TÔI</h5>
         <ul>
             <li><a href="">Giới thiệu</a></li>
-            <li><a href="">Liên hệ</a></li>
+            <li><a href="/html/lienhe.html">Liên hệ</a></li>
         </ul>
     </div>
     <div class="footer_heading_col2">
