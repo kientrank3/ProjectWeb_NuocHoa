@@ -1,4 +1,4 @@
-const data = [{
+[{
   "_id": "A001",
   "tenNuocHoa": "Creed Aventus For Men EDP",
   "DanhGia": "",
@@ -756,6 +756,4 @@ const data = [{
     "./img/sanpham/A003/3.jpg",
     "./img/sanpham/A003/4.jpg"
   ]
-}];
-export default data;
-
+}]
