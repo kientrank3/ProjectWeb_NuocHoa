@@ -7,7 +7,7 @@ const data = [{
     750000,
     6800000
   ],
-  "moTa": "Nhắc đến Aventus hẳn những ai yêu thích nước hoa đều phải dành cho nó nhiều mỹ từ, và từ ngữ miêu tả về nó một cách chân thật nhất đó là \"vua\" của nước hoa. Nước hoa nam Creed Aventus đầy sang trọng và hiện đại, mang một phong cách giản dị, nhưng đầy chững chạc dành riêng cho phái mạnh.",
+  "moTa": "Nhắc đến Aventus hẳn những ai yêu thích nước hoa đều phải dành cho nó nhiều mỹ từ, và từ ngữ miêu tả về nó một cách chân thật nhất đó là vua của nước hoa. Nước hoa nam Creed Aventus đầy sang trọng và hiện đại, mang một phong cách giản dị, nhưng đầy chững chạc dành riêng cho phái mạnh.",
   "gioiTinh": "Nam",
   "xuatXu": "Pháp",
   "dungTich": [
@@ -398,14 +398,14 @@ const data = [{
   ]
 },{
   "_id": "A012",
-  "tenNuocHoa": "Lancôme Lavie Est Belle L'Eau De Parfum",
+  "tenNuocHoa": "Lancôme Lavie Est Belle L Eau De Parfum",
   "DanhGia": "",
   "tinhTrang": "Còn Hàng",
   "gia": [
     375000,
     3150000
   ],
-  "moTa": "Nắm giữ những tầng hương đơn giản nhưng lại vô cùng đồng điệu cùng khả năng lưu hương rất bền mùi, những cảm xúc mà nước hoa La Vie Est Belle L'Eau De Parfum mang lại là thứ mà bất kì cô gái cũng phải mềm lòng.",
+  "moTa": "Nắm giữ những tầng hương đơn giản nhưng lại vô cùng đồng điệu cùng khả năng lưu hương rất bền mùi, những cảm xúc mà nước hoa La Vie Est Belle L Eau De Parfum mang lại là thứ mà bất kì cô gái cũng phải mềm lòng.",
   "gioiTinh": "Nữ",
   "xuatXu": "Pháp",
   "dungTich": [
@@ -441,7 +441,7 @@ const data = [{
     315000,
     2650000
   ],
-  "moTa": "Nắm giữ những tầng hương đơn giản nhưng lại vô cùng đồng điệu cùng khả năng lưu hương rất bền mùi, những cảm xúc mà nước hoa La Vie Est Belle L'Eau De Parfum mang lại là thứ mà bất kì cô gái cũng phải mềm lòng.",
+  "moTa": "Nắm giữ những tầng hương đơn giản nhưng lại vô cùng đồng điệu cùng khả năng lưu hương rất bền mùi, những cảm xúc mà nước hoa La Vie Est Belle L Eau De Parfum mang lại là thứ mà bất kì cô gái cũng phải mềm lòng.",
   "gioiTinh": "Unisex",
   "xuatXu": "Pháp",
   "dungTich": [

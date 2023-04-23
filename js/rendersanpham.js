@@ -1,16 +1,6 @@
 import data from "./data.js";
 
-// console.log(data);
 
-// document.querySelector(".dssanpham").innerHTML = data.map(item=>{
-//     return `
-//     <a href=""><div class="item col-4">
-//                 <div>
-//                 <img src="${item.anh[0]}" alt="">
-//                 <p>${item.tenNuocHoa}</p>
-//                 <p class="">${item.gia[0]}-${item.gia[1]} vnd</p>
-//             </div></a>
-// `;}).join('');
 localStorage.setItem("dssanpham",JSON.stringify(data));
 
 var jsondssanpham = localStorage.getItem('dssanpham');
@@ -26,11 +16,15 @@ function chuyenDSObjectThanhHTML(dsSanPham) {
     HTMLDanhSachSanPham = HTMLDanhSachSanPham + `</div>`;
     return HTMLDanhSachSanPham;
 }
+
+
+
 function chuyenSanPhamThanhHTML(sanPham){
     var html=``;
+    var SP = JSON.stringify(sanPham);
     html += `<div class="item">
                      <div class="item-thumb">
-                        <a href=""><img src=${sanPham.anh[1]} alt=""></a>
+                        <a href="/html/chitietsanpham.html" onclick=\'showDetail(\`${SP}\`);\' id="location"><img src=${sanPham.anh[1]} alt=""></a>
                         </div>
                         <h4 class="item-title">${sanPham.tenNuocHoa}</h4>
                         <div class="item-price">${sanPham.gia[0]} đ - ${sanPham.gia[1]} đ</div>
