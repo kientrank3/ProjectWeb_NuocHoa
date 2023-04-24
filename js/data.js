@@ -153,7 +153,7 @@ const data = [{
     250000,
     4250000
   ],
-  "moTa": "Nhắc đến Aventus hẳn những ai yêu thích nước hoa đều phải dành cho nó nhiều mỹ từ, và từ ngữ miêu tả về nó một cách chân thật nhất đó là \"vua\" của nước hoa. Nước hoa nam Creed Aventus đầy sang trọng và hiện đại, mang một phong cách giản dị, nhưng đầy chững chạc dành riêng cho phái mạnh.",
+  "moTa": "Nhắc đến Aventus hẳn những ai yêu thích nước hoa đều phải dành cho nó nhiều mỹ từ, và từ ngữ miêu tả về nó một cách chân thật nhất đó là vua của nước hoa. Nước hoa nam Creed Aventus đầy sang trọng và hiện đại, mang một phong cách giản dị, nhưng đầy chững chạc dành riêng cho phái mạnh.",
   "gioiTinh": "Nam",
   "xuatXu": "Ý",
   "dungTich": [
@@ -177,7 +177,7 @@ const data = [{
   "anh": [
     "./img/sanpham/A008/1.webp",
     "./img/sanpham/A008/2.webp",
-    "./img/sanpham/A008/3.jpg",
+    "./img/sanpham/A008/3.webp",
     "./img/sanpham/A008/4.webp"
   ]
 },{
@@ -189,7 +189,7 @@ const data = [{
     940000,
     5000000
   ],
-  "moTa": "Nhắc đến Aventus hẳn những ai yêu thích nước hoa đều phải dành cho nó nhiều mỹ từ, và từ ngữ miêu tả về nó một cách chân thật nhất đó là \"vua\" của nước hoa. Nước hoa nam Creed Aventus đầy sang trọng và hiện đại, mang một phong cách giản dị, nhưng đầy chững chạc dành riêng cho phái mạnh.",
+  "moTa": "Nhắc đến Aventus hẳn những ai yêu thích nước hoa đều phải dành cho nó nhiều mỹ từ, và từ ngữ miêu tả về nó một cách chân thật nhất đó là vua của nước hoa. Nước hoa nam Creed Aventus đầy sang trọng và hiện đại, mang một phong cách giản dị, nhưng đầy chững chạc dành riêng cho phái mạnh.",
   "gioiTinh": "Nữ",
   "xuatXu": "Ả Rập",
   "dungTich": [
@@ -357,8 +357,8 @@ const data = [{
   "anh": [
     "./img/sanpham/A002/1.webp",
     "./img/sanpham/A002/2.webp",
-    "./img/sanpham/A003/3.webp",
-    "./img/sanpham/A003/4.webp"
+    "./img/sanpham/A002/3.webp",
+    "./img/sanpham/A002/4.webp"
   ]
 },{
   "_id": "A011",
@@ -755,6 +755,114 @@ const data = [{
     "./img/sanpham/A003/2.webp",
     "./img/sanpham/A003/3.jpg",
     "./img/sanpham/A003/4.jpg"
+  ]
+},{
+  "_id": "A021",
+  "tenNuocHoa": "Maison Francis Kurkdjian Baccarat Rouge 540 Extrait De Parfum",
+  "DanhGia": "",
+  "tinhTrang": "Còn Hàng",
+  "gia": [
+    995000,
+    9500000
+  ],
+  "moTa": "Có thể nói mùi hương của nước hoa Baccarat Rouge 540 Extrait thơm ngọt, thơm lâu, thơm đậm sâu thứ thiệt cùng với độ lưu hương rất lâu - trên 12 giờ, phù hợp cho mọi giới tính để sử dụng hàng ngày.",
+  "gioiTinh": "Unisex",
+  "xuatXu": "Pháp",
+  "dungTich": [
+    "Chiết 10ml",
+    "Fullbox 100ml"
+  ],
+  "thongTinSanPham": {
+    "nhomNuocHoa": "Hương hoa cỏ phương đông",
+    "gioiTinh": "Unisex",
+    "doTuoiKhuyenDung": "Trên 25",
+    "namRaMat": 2017,
+    "nongDo": "EDP",
+    "nhaPhaChe": "Máion Francis Kurkdjian",
+    "doLuuHuong": "Trên 12h",
+    "phongCach": [
+      "Sang trọng",
+      "Tinh tế",
+      "Cuốn hút"
+    ]
+  },
+  "anh": [
+    "./img/sanpham/A021/1.webp",
+    "./img/sanpham/A021/2.webp",
+    "./img/sanpham/A021/3.webp",
+    "./img/sanpham/A021/4.webp"
+  ]
+},{
+  "_id": "A022",
+  "tenNuocHoa": "Kilian Good Girl Gone Bad EDP",
+  "DanhGia": "",
+  "tinhTrang": "Còn Hàng",
+  "gia": [
+    995000,
+    9500000
+  ],
+  "moTa": "Nước hoa Kilian rắn trắng chính hãng mang một mùi hương quyến rũ, gợi cảm và đầy lôi cuốn dành cho nữ giới, như một quả bom hoa có sức mạnh lan tỏa và lấn át những mùi hương xung quanh một cách khó tin đấy nhé.",
+  "gioiTinh": "Nữ",
+  "xuatXu": "Pháp",
+  "dungTich": [
+    "Chiết 10ml",
+    "Fullbox 100ml"
+  ],
+  "thongTinSanPham": {
+    "nhomNuocHoa": "Hương hoa cỏ trái cây",
+    "gioiTinh": "Nữ",
+    "doTuoiKhuyenDung": "Trên 25",
+    "namRaMat": 2017,
+    "nongDo": "EDP",
+    "nhaPhaChe": "Máion Francis Kurkdjian",
+    "doLuuHuong": "Trên 12h",
+    "phongCach": [
+      "Quyến rũ",
+      "Tinh tế",
+      "Gợi cảm"
+    ]
+  },
+  "anh": [
+    "./img/sanpham/A022/1.webp",
+    "./img/sanpham/A022/2.jpg",
+    "./img/sanpham/A022/3.webp",
+    "./img/sanpham/A022/4.jpg"
+  ]
+},{
+  "_id": "A023",
+  "tenNuocHoa": "Kilian Black Phantom Memento Mori EDP",
+  "DanhGia": "",
+  "tinhTrang": "Còn Hàng",
+  "gia": [
+    995000,
+    9500000
+  ],
+  "moTa": "Hương thơm của nước hoa Kilian đầu lâu chứa đựng sự mạnh mẽ của bóng đêm và sự ngọt ngào của tình yêu, khiến khí chất sang trọng và quyến rũ của phái đẹp cũng như phái mạnh được nổi bật.",
+  "gioiTinh": "Nữ",
+  "xuatXu": "Pháp",
+  "dungTich": [
+    "Chiết 10ml",
+    "Fullbox 100ml"
+  ],
+  "thongTinSanPham": {
+    "nhomNuocHoa": "Hương Vani phương Đông",
+    "gioiTinh": "Nữ",
+    "doTuoiKhuyenDung": "Trên 25",
+    "namRaMat": 2017,
+    "nongDo": "EDP",
+    "nhaPhaChe": "Sidonie Lancesseur",
+    "doLuuHuong": "Trên 12h",
+    "phongCach": [
+      "Quyến rũ",
+      "Tinh tế",
+      "Gợi cảm"
+    ]
+  },
+  "anh": [
+    "./img/sanpham/A023/1.webp",
+    "./img/sanpham/A023/2.webp",
+    "./img/sanpham/A023/3.webp",
+    "./img/sanpham/A023/4.webp"
   ]
 }];
 export default data;

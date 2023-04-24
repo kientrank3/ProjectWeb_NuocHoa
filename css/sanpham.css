@@ -11,7 +11,9 @@
     height: 240px;
     object-fit: cover; 
     transition: all 0.2s ease;
-   
+}
+.dssanpham .item-thumb{
+    overflow: hidden;
 }
 .dssanpham .item .item-title{
     font-size: 20px;
@@ -30,10 +32,11 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
-a:hover img{
+.dssanpham a:hover img{
     transform: scale(1.1); 
 }
-a{
+
+.dssanpham a{
     text-decoration: none;
     color: black;
 }

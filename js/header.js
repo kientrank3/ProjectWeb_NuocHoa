@@ -3,7 +3,7 @@ header.outerHTML = `<header class="header" id="header">
 <div class="banner">
                <div class="header_navbar_col_search">
                    <form action="" class="search">
-                       <input type="text" placeholder="Tìm Kiếm Sản Phẩm..."  >
+                       <input type="text" placeholder="Tìm Kiếm Sản Phẩm..."  id="searchInput" oninput="searchFunction()" >
                        <button class="searchbutton">
                            <i class="fa-solid fa-magnifying-glass" ></i>
                        </button>

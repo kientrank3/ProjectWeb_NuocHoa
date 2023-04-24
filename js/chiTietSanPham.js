@@ -66,7 +66,7 @@ quantityInput.addEventListener("input", function () {
 
 let objSP = JSON.parse(localStorage.getItem("sanpham"));
 console.log(objSP);
-document.querySelector("#main-image").src = `.${objSP.anh[0]}`;
+document.querySelector('#main-image').src = `.${objSP.anh[0]}`;
 let str="";
 for(var i=1;i<objSP.anh.length;i++){
     str+= `<img src=".${objSP.anh[i]}"

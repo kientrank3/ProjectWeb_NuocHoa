@@ -21,15 +21,66 @@
         <footer id="footer"></footer>
 
     </div>
-
+    <script src="/js/index.js" type="module">
+    </script>
     <script>
         function showDetail(objSanPham){
-            
             localStorage.clear();
             localStorage.setItem("sanpham",objSanPham);
         }
+        function searchFunction() {
+            const input = document.getElementById('searchInput');
+            const searchText = input.value.toLowerCase(); 
+          
+            // Lấy danh sách sản phẩm đã lưu trên localStorage
+            const products = JSON.parse(localStorage.getItem('dssanpham'));
+          
+            // Tìm kiếm sản phẩm theo từ khóa nhập vào
+            const filteredProducts = products.filter(function(product) {
+              return product.tenNuocHoa.toLowerCase().includes(searchText); // Kiểm tra tên sản phẩm có chứa từ khóa nhập vào không
+            });
+            console.log(filteredProducts);
+            var HTML = chuyenDSObjectThanhHTML(filteredProducts);
+        
+        
+            var nodeDSSanPham =  document.getElementById('products');
+            nodeDSSanPham.innerHTML = HTML;
+
+          }
+          function chuyenDSObjectThanhHTML(dsSanPham) {
+            var HTMLDanhSachSanPham = `<div class="dssanpham">`;
+            for(var i=0;i<dsSanPham.length;i++){
+                var htmlSanPham = chuyenSanPhamThanhHTML(dsSanPham[i]);
+                HTMLDanhSachSanPham = HTMLDanhSachSanPham + htmlSanPham;
+            }
+        
+            HTMLDanhSachSanPham = HTMLDanhSachSanPham + `</div>`;
+            return HTMLDanhSachSanPham;
+        }
+        
+        function chuyenSanPhamThanhHTML(sanPham){
+            var html=``;
+            var SP = JSON.stringify(sanPham);
+            html += `<div class="item">
+                             <div class="item-thumb">
+                                <a href="/html/chitietsanpham.html" onclick=\'showDetail(\`${SP}\`);\' id="location"><img src=${sanPham.anh[1]} alt=""></a>
+                                </div>
+                                <h4 class="item-title">${sanPham.tenNuocHoa}</h4>
+                                <div class="item-price">${sanPham.gia[0]} đ - ${sanPham.gia[1]} đ</div>
+                                <div class="item-rate"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                                <div class="item-btn">
+                                    <button class="btn btn-heart"><i class="fa-regular fa-heart"></i></button>
+                                    <button class="btn btn-primary"><i class="fa-sharp fa-regular fa-cart-plus"></i></button>
+                                </div>
+                            </div>`;
+        
+            return html;
+        }
+        
+        
+        
     </script>
-    <script src="/js/index.js" type="module"></script>
+    
 
 </body>
 </html>
