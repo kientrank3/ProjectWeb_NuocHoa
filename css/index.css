@@ -9,9 +9,48 @@
     box-sizing: border-box;
     margin: auto;
 }
+
 #myCarousel img{
     object-fit: cover;
     z-index: -1;
+}
+
+.owl-items{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.owl-stage{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+.owl-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 3px solid rgb(34,80,62);
+}
+.owl-stage .owl-item{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.owl-stage .owl-item h4{
+    color:black;
+    font-size: 20px;
+    height: 75px;
+    margin-top: 10px;
+}
+.owl-stage .owl-item p{
+    font-size: 16px;
+    color: gray;
+}
+.owl-stage .owl-item img{
+    width: 100%;
+    height: 230px;
+    margin-top: 0px;
 }
 
 

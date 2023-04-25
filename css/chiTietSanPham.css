@@ -108,6 +108,7 @@ table {
     height: 100px;
     margin-bottom: 20px;
     border: 1px solid rgb(34,80,62);
+    object-fit: cover;
 }
 #main-image{
     margin-top: 20px;

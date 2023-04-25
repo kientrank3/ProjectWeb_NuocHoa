@@ -1,15 +1,15 @@
 
 const myCarousel = document.querySelector("#myCarousel");
-myCarousel.outerHTML = ` <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="z-index:-1;">
+myCarousel.outerHTML = ` <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="z-index:-1; height:600px">
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 </div>
-<div class="carousel-inner">
+<div class="carousel-inner" style=" height:600px">
   <div class="carousel-item active">
     <img src="/img/banner1.jpg" class="d-block w-100" alt="banner1">
   </div>
-  <div class="carousel-item">
+  <div class="carousel-item" style=" height:600px">
     <img src="/img/banner2.jpg" class="d-block w-100" alt="banner2">
   </div>
 </div>

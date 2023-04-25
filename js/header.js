@@ -28,6 +28,9 @@ header.outerHTML = `<header class="header" id="header">
                        <a href="">
                            <i class="fa-sharp fa-regular fa-cart-plus" style="font-size: 28px;margin-left:5px"></i>
                        </a>
+                       <div class="subcart"> 
+                            <p>Không có sản phẩm nào trong giỏ hàng.</p>
+                       </div>
                    </div>
                </div>
            </div>
