@@ -81,7 +81,7 @@ header.outerHTML = `<header class="header" id="header">
                         </div>
                     </div>
                 </li>
-                <li class="navitem"><a href="">KIẾN THỨC</a></li>
+                <li class="navitem"><a href="/html/kienthuc.html">KIẾN THỨC</a></li>
                 <li class="navitem"><a href="/html/lienhe.html">LIÊN HỆ</a></li>
                </ul>
            </div>
