@@ -92,15 +92,15 @@
     background-color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 1px 1px 1px rgba(76, 75, 75, 0.6) ;
-    width: 350px;
+    width: 600px;
     right: 0;
     border-radius: 5px;
     display: none;
     animation: subnav ease 0.4s forwards;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding:5px;
     z-index: 100;
 }
+
 .header_nav{
     width: 100%;
     height: 50px;
@@ -153,6 +153,7 @@
     margin: 0px;
     padding: 25px;
 }
+
 #nuochoa{
     width: 250px;
     grid-template-columns: 100%;

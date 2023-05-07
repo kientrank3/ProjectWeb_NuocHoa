@@ -4,15 +4,15 @@ footer.outerHTML = `<footer class="footer">
     <div class="footer_heading_col1">
         <h5>VỀ CHÚNG TÔI</h5>
         <ul>
-            <li><a href="/html/gioithieu.html">Giới thiệu</a></li>
-            <li><a href="/html/lienhe.html">Liên hệ</a></li>
+            <li><a href="../html/gioithieu.html">Giới thiệu</a></li>
+            <li><a href="../html/lienhe.html">Liên hệ</a></li>
         </ul>
     </div>
     <div class="footer_heading_col2">
         <h5>HƯỚNG DẪN</h5>
         <ul>
-            <li><a href="/html/huongdanmuahangvathanhtoan.html">Hướng dẫn mua hàng</a></li>
-            <li><a href="/html/dieukhoansudung.html">Điều khoản sử dụng</a></li>
+            <li><a href="../html/huongdanmuahangvathanhtoan.html">Hướng dẫn mua hàng</a></li>
+            <li><a href="../html/dieukhoansudung.html">Điều khoản sử dụng</a></li>
         </ul>
     </div>
     <div class="footer_heading_col3">
@@ -26,7 +26,7 @@ footer.outerHTML = `<footer class="footer">
         <h5>HỖ TRỢ</h5>
         <ul>
             <li><a href="">Cộng tác viên</a></li>
-            <li><a href="/html/loginform.html">Đăng nhập / Đăng ký</a></li>
+            <li><a href="../html/loginform.html">Đăng nhập / Đăng ký</a></li>
         </ul>
     </div>
 </div>

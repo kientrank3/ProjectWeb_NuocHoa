@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../css/index.css">
+
+    <style>
+        .container{
+            min-height: 500px;
+            border: 1px solid gray;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .cart{
+            display: flex;
+            flex-direction: column;
+        }
+        .title{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 35px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(34,80,62);
+        }
+        .img_itemCart{
+            width: 70px;
+            height: 70px;
+            border-radius: 3px;
+            border: 1px solid rgb(176, 176, 176);
+        }
+        .listSanPham{
+            width: 90%;
+        }
+        .tbl_itemCart{
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        .tbl_itemCart th{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .tbl_itemCart tr {
+            height: 80px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid whitesmoke;
+        }
+        .btn_delete{
+            font-size: 24px;
+            border: 0px;
+            border-radius: 3px;
+            background-color: white;
+        }
+        .footer_cart{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-right: 150px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 100%;
+        }
+        .btn_footer{
+            border-radius: 5px;
+            height: 50px;
+            border: 0px;
+            background-color:rgb(34,80,62) ;
+            color: white;
+        }
+        .btn_accept{
+            width: 150px;
+            
+        }
+        .btn_continue{
+            margin-right: 20px;
+            width: 170px;
+            background-color: white;
+            border: 1px solid rgb(34,80,62);
+            color: rgb(34,80,62);
+        }
+        .btn_continue:hover{
+            background-color: rgb(34,80,62);
+            color: white;
+        }
+        .btn_accept:hover{
+            background-color: white;
+            border: 1px solid rgb(34,80,62);
+            color: rgb(34,80,62);
+        }
+        .tongtien{
+            margin-left: 200px;
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="container">
+        <div class="cart">
+            <h2 class="title">Giỏ hàng</h2>
+            <div class="listSanPham">
+
+            </div>
+            <div class="footer_cart">
+                <div class="tongtien d-flex">Tổng tiền: <p class="tt" style="margin-left: 10px;"></p> </div>
+                <div class="btn_cart">
+                    <button class="btn_footer btn_continue">Tiếp tục mua hàng</button>
+                    <button class="btn_footer btn_accept">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="../js/index.js" type="module"></script>
+    <script>
+        let cartItems = JSON.parse(localStorage.getItem('cartItems'));
+       
+        let HTML = document.querySelector(".listSanPham");
+        let cart = document.querySelector(".cart");
+        if(cartItems.length==0){
+            cart.innerHTML = `<h2 class="title">Giỏ hàng</h2>
+            <div style="font-size:80px; margin-top:20px;margin-bottom:20px"><i class="fa-regular fa-bag-shopping"></i></div>
+            <div style="font-size:24px">Giỏ hàng của bạn hiện không có sản phẩm nào</div>`;
+        }else{
+            let html=`<table class="d-flex tbl_itemCart">
+                <tr>
+                <th></th>
+                <th>Tên sản phẩm</th>
+                <th>Dung tích</th>
+                <th>Số lượng</th>
+                <th>Tổng tiền</th>
+                <th></th>
+                </tr>`;
+            for(let i=0;i<cartItems.length;i++){
+                let sp = cartItems[i];
+                html+=`<tr class="item_cart">
+                    <td><img src=".${cartItems[i].anh}" alt="" class="img_itemCart"></td>
+                    <td>${cartItems[i].name}</td>
+                    <td>${cartItems[i].ml}</td>
+                    <td>${cartItems[i].quantity}</td>
+                    <td>${cartItems[i].quantity*cartItems[i].price}</td>
+                    <td><button class="btn_delete" onclick=\'removeCartItem(\`${sp.id}\`);\'><i class="fa-solid fa-trash-can"></i></button></td>
+                    </tr>`;
+            }
+            html+=`</table>`;
+            HTML.innerHTML = html;
+        }
+        function removeCartItem(cartItemID){
+            let index = cartItems.findIndex(item => item.id === cartItemID);
+            if(index!==-1)
+                cartItems.splice(index,1);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            location.reload();   
+        }
+        let tongtien = document.querySelector(".tt");
+        let tt = 0;
+        for(let i=0;i<cartItems.length;i++){
+            tt+=(cartItems[i].quantity*cartItems[i].price);
+        }
+        tongtien.innerHTML = `<p>${tt} VNĐ</p>`;
+        
+    </script>
+</body>
+</html>
