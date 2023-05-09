@@ -1,3 +1,4 @@
+
 const header = document.querySelector("#header");
 header.outerHTML = `<header class="header" id="header">
 <div class="banner">
@@ -72,7 +73,7 @@ header.outerHTML = `<header class="header" id="header">
                     </div>
                 </li >
                 <li class="navitem">
-                    <a href="">NƯỚC HOA</a>
+                    <a href="" id="btn_nuochoa">NƯỚC HOA</a>
                     <div class="subnav" id="nuochoa">
                         <div>
                             <a href="">Nước hoa Nam</a> <br>

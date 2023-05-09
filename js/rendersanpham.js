@@ -1,4 +1,4 @@
-import data from "../js/data.js";
+import data from "./data.js";
 
 
 localStorage.setItem("dssanpham",JSON.stringify(data));
@@ -6,10 +6,19 @@ localStorage.setItem("dssanpham",JSON.stringify(data));
 var jsondssanpham = localStorage.getItem('dssanpham');
 var dsSanPham = JSON.parse(jsondssanpham);
 
+
 function chuyenDSObjectThanhHTML(dsSanPham) {
     var HTMLDanhSachSanPham = `<div class="dssanpham">`;
     for(var i=0;i<dsSanPham.length;i++){
+        
         var htmlSanPham = chuyenSanPhamThanhHTML(dsSanPham[i]);
+        
+        if(i==3){
+            htmlSanPham += `<img src = "./img/banner/banner-5.webp" alt=""  class="list-banner">`;
+        }
+        if(i==7){
+            htmlSanPham  += `<img src = "./img/banner/banner-10.webp" alt=""  class="list-banner">`;
+        }
         HTMLDanhSachSanPham = HTMLDanhSachSanPham + htmlSanPham;
     }
 
@@ -18,13 +27,12 @@ function chuyenDSObjectThanhHTML(dsSanPham) {
 }
 
 
-
 function chuyenSanPhamThanhHTML(sanPham){
     var html=``;
     var SP = JSON.stringify(sanPham);
     html += `<div class="item">
                      <div class="item-thumb">
-                        <a href="/html/chitietsanpham.html" onclick=\'showDetail(\`${SP}\`);\' id="location"><img src=".${sanPham.anh[1]}" alt=""></a>
+                        <a href="./html/chitietsanpham.html" onclick=\'showDetail(\`${SP}\`);\' id="location"><img src="${sanPham.anh[1]}" alt=""></a>
                         </div>
                         <h4 class="item-title">${sanPham.tenNuocHoa}</h4>
                         <div class="item-price">${sanPham.gia[0]} đ - ${sanPham.gia[1]} đ</div>
@@ -40,8 +48,6 @@ function chuyenSanPhamThanhHTML(sanPham){
 
 
 var HTML = chuyenDSObjectThanhHTML(dsSanPham);
-
-
 var nodeDSSanPham =  document.getElementById('products');
 nodeDSSanPham.innerHTML = HTML;
 

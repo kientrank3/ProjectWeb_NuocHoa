@@ -7,10 +7,10 @@ myCarousel.outerHTML = ` <div id="carouselExampleIndicators" class="carousel sli
 </div>
 <div class="carousel-inner" style=" height:600px">
   <div class="carousel-item active">
-    <img src="../img/banner1.jpg" class="d-block w-100" alt="banner1">
+    <img src="./img/banner1.jpg" class="d-block w-100" alt="banner1">
   </div>
   <div class="carousel-item" style=" height:600px">
-    <img src="../img/banner2.jpg" class="d-block w-100" alt="banner2">
+    <img src="./img/banner2.jpg" class="d-block w-100" alt="banner2">
   </div>
 </div>
 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
