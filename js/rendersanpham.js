@@ -14,10 +14,10 @@ function chuyenDSObjectThanhHTML(dsSanPham) {
         var htmlSanPham = chuyenSanPhamThanhHTML(dsSanPham[i]);
         
         if(i==3){
-            htmlSanPham += `<img src = "./img/banner/banner-5.webp" alt=""  class="list-banner">`;
+            htmlSanPham += `<img src = "../img/banner/banner-5.webp" alt=""  class="list-banner">`;
         }
         if(i==7){
-            htmlSanPham  += `<img src = "./img/banner/banner-10.webp" alt=""  class="list-banner">`;
+            htmlSanPham  += `<img src = "../img/banner/banner-10.webp" alt=""  class="list-banner">`;
         }
         HTMLDanhSachSanPham = HTMLDanhSachSanPham + htmlSanPham;
     }

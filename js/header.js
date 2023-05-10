@@ -11,7 +11,7 @@ header.outerHTML = `<header class="header" id="header">
                    </form>
                </div>
                <div class="header_navbar_logo">
-                   <a href="/index.html"><img src="/img/logo.png" alt="logo"> </a>
+                   <a href="//index.html"><img src="//img/logo.png" alt="logo"> </a>
                </div>
                <div class="header_navbar_hidden">
                    <div class="header_navbar_login">
