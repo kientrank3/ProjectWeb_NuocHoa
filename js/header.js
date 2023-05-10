@@ -11,7 +11,7 @@ header.outerHTML = `<header class="header" id="header">
                    </form>
                </div>
                <div class="header_navbar_logo">
-                   <a href="../index.html"><img src="../img/logo.png" alt="logo"> </a>
+                   <a href="./index.html"><img src="./img/logo.png" alt="logo"> </a>
                </div>
                <div class="header_navbar_hidden">
                    <div class="header_navbar_login">
@@ -26,7 +26,7 @@ header.outerHTML = `<header class="header" id="header">
                    </a>
                    </div>
                    <div class="header_navbar_cart">
-                       <a href="../html/giohang.html">
+                       <a href="./html/giohang.html">
                            <i class="fa-solid fa-cart-plus" style="font-size: 28px;margin-left:5px"></i>
                        </a>
                        <div class="subcart"> 
@@ -37,8 +37,8 @@ header.outerHTML = `<header class="header" id="header">
            </div>
            <div class="header_nav">
                <ul class="navbar">
-                <li class="navitem"><a href="../index.html">TRANG CHỦ</a></li>
-                <li class="navitem"><a href="../html/gioithieu.html">GIỚI THIỆU</a></li>
+                <li class="navitem"><a href="./index.html">TRANG CHỦ</a></li>
+                <li class="navitem"><a href="./html/gioithieu.html">GIỚI THIỆU</a></li>
                 <li class="navitem">
                     <a href="">THƯƠNG HIỆU</a>
                     <div class="subnav">
